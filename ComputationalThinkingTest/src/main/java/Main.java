@@ -17,28 +17,26 @@ public class Main {
             7 6
             9 8
          */
-        for (int i=0; i<5; i++){
+        for (int i = 0; i < 5; i++) {
 
             // the x and y is increased by 2 for each other case
-            int x = 1, y =0;
-            x=x + i*2;
-            y=y + i*2;
+            int x = 1, y = 0;
+            x = x + i * 2;
+            y = y + i * 2;
 
             System.out.println("INPUT: x = " + x + ", y = " + y);
 
             // if algorithm segments
-            if (x>5) {
-                x = x+1;
-                y = y+2;
-            }
-            else {
-                x = x+5;
-                y = y+10;
+            if (x > 5) {
+                x = x + 1;
+                y = y + 2;
+            } else {
+                x = x + 5;
+                y = y + 10;
             }
 
             System.out.println("OUTPUT: x = " + x + ", y = " + y + "\n");
         }
-
 
 
         System.out.println("\nwhile Loop:");
@@ -61,14 +59,12 @@ public class Main {
 
         int i = 1, s = 10;
         System.out.println("INPUT: iteration number-" + iteration + ", i = " + i + ", s = " + s);
-        while (s>0){
-            s = s-i;
-            i = i+1;
+        while (s > 0) {
+            s = s - i;
+            i = i + 1;
             System.out.println("INSIDE LOOP: iteration number-" + ++iteration + ", i = " + i + ", s = " + s);
         }
         System.out.println("OUTPUT: iteration number-" + iteration + ", i = " + i + ", s = " + s);
-
-
 
 
         System.out.println("\nfor-next Loop:");
@@ -89,8 +85,8 @@ public class Main {
 
         int x = 0;
         System.out.println("INPUT: j = undefined, x = " + x);
-        for (int j = 0; j<= 4; j++) {
-            x = 2*j;
+        for (int j = 0; j <= 4; j++) {
+            x = 2 * j;
             System.out.println("INSIDE LOOP: j = " + j + ", x = " + x);
         }
         System.out.println("OUTPUT: j = undefined, x = " + x);
